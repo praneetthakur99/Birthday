@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+#main{
+    margin-left: 500px;
+    display: none;
+}
+#yesbtn{
+    height: 30px;
+    width: 100px;
+}
+#nobtn{
+    height: 30px;
+    width: 100px;
+}
+#accept{
+    margin-left: 500px;
+    margin-top: 100px;
+    display: none;
+}
+#wish{
+    margin-left: 400px;
+    margin-top: 100px;
+}
+#nxtbtn{
+    height: 30px;
+    width: 100px;
+    margin-left: 180px;
+    margin-top: 10px;
+}
+</style>    
+<head>
+    <title>Happy Birthday Megha</title>
+</head>
+<body>
+    <div id="wish">
+        <iframe src="https://giphy.com/embed/VX5pqkR3E6EmlKFlmq" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><br>
+        <!-- <iframe src="https://giphy.com/embed/onPMdPD9wI4rWA6KaT" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/happy-birthday-hbd-hb-onPMdPD9wI4rWA6KaT">via GIPHY</a></p> -->
+        <button id="nxtbtn" onclick="nxtbtn()">Ye Dba Dost</button>
+    </div>
+    <div id="main">
+        <h1>Party kb de rhi hai ???</h1>
+        <img src="photo.jpg" width="200px" height="300px"><br>
+        <button id="yesbtn" onclick="accept()">Jb Tu Bole</button>
+        <button id="nobtn" onmouseover="btn()" onmouseout="after()">Kabhi Nhi</button>
+    </div>
+    <div id="accept">
+        <img src="after.jpg" width="400px" height="300px">
+    </div>
+</body>
+
+</html>
+<script>
+    function btn(){
+        document.getElementById("nobtn").style.marginLeft="150px";
+        // document.getElementById("demo").style.color="red";
+    }
+
+    function after(){
+        document.getElementById("nobtn").style.marginLeft="0px"
+    }
+    function accept(){
+        document.getElementById("main").style.display=("none");
+        document.getElementById("accept").style.display=("block");
+    }
+
+    function nxtbtn(){
+        document.getElementById("wish").style.display=("none");
+        document.getElementById("main").style.display=("block");
+    }
+</script>
